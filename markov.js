@@ -97,5 +97,5 @@ class MarkovMachine {
 
 // const t = new MarkovMachine(fsP.readFile("eggs.txt", "utf8"));
 // console.log(t.getText());
-console.log((new MarkovMachine("The cat is a cat").chains))
+// console.log((new MarkovMachine("The cat is a cat").chains))
 module.exports = MarkovMachine

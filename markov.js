@@ -83,17 +83,19 @@ class MarkovMachine {
 // console.log(catInHatMachine.chains);
 // console.log(catInHatMachine.getText());
 
-async function start(path) {
-  try {
-    const text = await fsP.readFile(path, "utf8");
-    const m = new MarkovMachine(text);
-    console.log(m.getText());
-  } catch (err) {
-    console.log(err.code);
-  }
-}
+// async function start(path) {
+//   try {
+//     const text = await fsP.readFile(path, "utf8");
+//     const m = new MarkovMachine(text);
+//     console.log(m.getText());
+//   } catch (err) {
+//     console.log(err.code);
+//   }
+//}
 
-start(process.argv[2]);
+// start(process.argv[2]);
 
 // const t = new MarkovMachine(fsP.readFile("eggs.txt", "utf8"));
 // console.log(t.getText());
+console.log((new MarkovMachine("The cat is a cat").chains))
+module.exports = MarkovMachine

@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/cli3338198/node-markov/issues"
   },
-  "homepage": "https://github.com/cli3338198/node-markov#readme"
+  "homepage": "https://github.com/cli3338198/node-markov#readme",
+  "dependencies": {
+    "global": "^4.4.0",
+    "jest": "^29.2.2"
+  }
 }
